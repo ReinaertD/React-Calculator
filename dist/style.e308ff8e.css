@@ -1,0 +1,106 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: inherit;
+}
+
+.app {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    height: 80vh;
+    width: 25%;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, .4);
+    background-color: #ddd;
+}
+
+.result-screen {
+    height: 19vh;
+    font-size: 8rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.computation-screen {
+    height: 6vh;
+    font-size: 2.5rem;
+    /* To display the value at the bottom-right of the container */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.screen {
+    height: 25vh;
+    width: 100%;
+    padding: 0 2rem;
+    overflow: hidden;
+    white-space: no-wrap;
+    color: #eee;
+    background-color: red;
+}
+
+.keypad__row {
+    height: 11vh;
+    width: 100%;
+    display: flex;
+    color: white;
+}
+
+.keypad {
+    height: 55vh;
+    width: 100%;
+}
+
+.btn {
+    width: 25%;
+    height: 100%;
+    font-size: 3rem;
+    font-family: inherit;
+    background-color: #fff;
+    border: 1px solid transparent;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .25;
+}
+
+.btn--large {
+    width: 50%;
+    color: #fff;
+    background-color: red;
+    transition: all .2s;
+}
+
+.btn--large:hover {
+    background-color: #fff;
+    color: red;
+}
+
+.btn:hover {
+    color: #eee;
+    color: red;
+}
+
+.btn:active {
+    transform: scale(.95);
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
